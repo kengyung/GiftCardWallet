@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, GiftCardWalletActivity!</string>
+    <string name="app_name">GiftCardWallet</string>
+    <string name="companyName">Company Name</string>
+    <string name="cardBalance">Card Balance</string>
+    <string name="company_phone_number">Phone Number</string>
+    <string name="cardSerial">Serial Number (if applicable)</string>
+    <string name="notes">Additional Notes:</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="delete_mode_is_off">Turn on Delete mode</string>
+    <string name="delete_mode_is_on">Turn off Delete mode</string>
+    <string name="add_item">Add a Gift Card</string>
+    <string name="expiry">Expiry Date (mm/dd/yyyy)</string>
+
+</resources>

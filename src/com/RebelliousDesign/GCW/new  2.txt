@@ -1,0 +1,34 @@
+List<GiftCard> list = gcDAO.getAllGiftCards();
+        //startManagingCursor(c);
+        String[] from = new String[list.size()];
+        for (int i = 0; i<list.size(); i++)
+        	from[i] = list.get(i).getCompany();
+        //String[] from = new String[] { list.size())};//, GiftCardDbAdapter.KEY_EXPIRY,GiftCardDbAdapter.KEY_PHONE,GiftCardDbAdapter.KEY_BALANCE,GiftCardDbAdapter.KEY_NOTES };
+        int[] to = new int[] { R.id.companyNameCol, R.id.balanceCol };
+        
+        // Now create an array adapter and set it to display using our row
+        SimpleAdapter cards =
+            new SimpleAdapter(this,list, R.layout.main_items_two_line_row, from, to);
+        setListAdapter(cards);
+        
+ 
+       setListAdapter( simpleList );
+        //End of New Stuff
+		
+		
+		
+		
+		 
+        Cursor c = gcDAO.getAllGiftCards();
+        //startManagingCursor(c);
+
+        String[] from = new String[] { GiftCardDbAdapter.KEY_COMPANY, GiftCardDbAdapter.KEY_BALANCE};//, GiftCardDbAdapter.KEY_EXPIRY,GiftCardDbAdapter.KEY_PHONE,GiftCardDbAdapter.KEY_BALANCE,GiftCardDbAdapter.KEY_NOTES };
+        int[] to = new int[] { R.id.companyNameCol, R.id.balanceCol };
+        
+        // Now create an array adapter and set it to display using our row
+        SimpleCursorAdapter cards =
+            new SimpleCursorAdapter(this, R.layout.main_items_two_line_row, c, from, to);
+        setListAdapter(cards);
+        
+
+        //End of New Stuff
